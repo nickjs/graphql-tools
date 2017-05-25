@@ -216,7 +216,7 @@ function printOperation(
     fragmentsReferenced,
   } = operation;
 
-  const document = new Document(`${operationName}${pascal(operationType)}`, operation);
+  const document = new Document(`${operationName}${pascal(operationType)}Data`, operation);
   context.document = document;
 
   context.addUsedExternalFragments(fragmentsReferenced);
